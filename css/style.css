@@ -26,7 +26,7 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     font-size: 100%;
-    margin: 90px 160px 0 160px;
+    margin: 5.635rem 10rem 0 10rem;
 }
 
 
@@ -97,15 +97,10 @@ h1, h2, h3 {
 
 
 
-/* === GRID SECTION === */
 
 
-.grid-section {
 
-    /* 
-    margin-right: 160px;
-    margin-left: 160px; */
-}
+
 
 
 
@@ -171,6 +166,239 @@ img {
 
 
 
+.footer {
+
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.attribution {
+     font-size: 11px;
+     text-align: center; 
+    
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-blue);
+
+
+}
+
+
+
+/* === Mobile Version (414px) === */
+
+
+@media (max-width: 414px) {
+
+    .header {
+
+        width: 100%;
+        margin-top: 3.125rem;
+       
+        
+    
+    }
+    
+    .header .header-title {
+       
+        width: auto;
+        padding: 30px;
+      
+      
+       
+    
+    }
+    
+    .header-title h1 {
+    
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+    
+    .header-title h2 {
+    
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    .header-title p {
+    
+        margin-top: 1.25rem;
+        font-weight: 200;
+    }
+
+}
+
+
+
+@media (max-width: 414px) {
+
+
+    body {
+
+        margin: 0;
+    }
+
+    .grid-container {
+
+       
+        display: grid;
+
+        grid-template-areas: 
+
+            "supervisor"
+            "team"
+            "karma"
+            "calc";
+
+        grid-template-columns: auto auto auto; 
+        grid-gap: 0;
+        grid-row-gap: 1.875rem;
+        align-content: start;
+              
+    }
+
+
+    .grid-section {
+
+        margin: 5rem 1.875rem 1.875rem 1.875rem;
+    }
+
+    .grid-card {
+
+        padding: 1.5rem; 
+            
+    
+    }
+
+    .grid-container > div > p {
+ 
+        padding-top: 0;
+
+}
+
+
+@media (max-width: 414px) {
+
+
+    .footer {
+
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
+/* === Mobile Version (375px)==== */
+
+
+@media (max-width: 375px) {
+
+    .header {
+
+        width: 100%;
+        margin-top: 3.125rem;
+       
+        
+    
+    }
+    
+    .header .header-title {
+       
+        width: auto;
+        padding: 1.875rem;
+      
+      
+       
+    
+    }
+    
+    .header-title h1 {
+    
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+    
+    .header-title h2 {
+    
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    .header-title p {
+    
+        margin-top: 1.25rem;
+        font-weight: 200;
+    }
+
+}
+
+/* ===Mobile Version GRID=== */
+
+@media (max-width: 375px) {
+
+
+    body {
+
+        margin: 0;
+    }
+
+    .grid-container {
+
+       
+        display: grid;
+
+        grid-template-areas: 
+
+            "supervisor"
+            "team"
+            "karma"
+            "calc";
+
+        grid-template-columns: auto auto auto; 
+        grid-gap: 0;
+        grid-row-gap: 1.875rem;
+        align-content: start;
+              
+    }
+
+
+    .grid-section {
+
+        margin: 5rem 1.875rem 1.875rem 1.875rem;
+    }
+
+    .grid-card {
+
+        padding: 1.5rem; 
+            
+    
+    }
+
+    .grid-container > div > p {
+ 
+        padding-top: 0;
+
+}
+
+
+@media (max-width: 375px) {
+
+
+    .footer {
+
+        margin-top: 1.875rem;
+    }
+
+}
 
 
 
@@ -178,41 +406,3 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
