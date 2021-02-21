@@ -26,13 +26,148 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     font-size: 100%;
+    margin: 90px 160px 0 160px;
+}
+
+
+p {
+
+    color: var(--gray-blue)
+}
+
+h1, h2, h3 {
+
+    color: var(--dark-blue)
+}
+
+.grid-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 250px;
+    width: auto;
+    padding: 1.875rem; 
+    border-radius: 5px;
+    box-shadow: var(--gray-blue) 0px 7px 29px 0px;
+
+}
+
+
+/* === Header === */
+
+
+.header {
+
+    width: 100%;
+    margin-bottom: 3.75rem;
+    margin-top: 5.625rem;
+    
+
+}
+
+.header .header-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    padding: 1,875rem 1,875rem 0px 1,875rem;
+    text-align: center;
+    /* border: 2px solid black; */
+
+}
+
+.header-title h1 {
+
+    font-weight: 200;
+    font-size: 2.25rem;
+}
+
+.header-title h2 {
+
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.header-title p {
+
+    margin-top: 1.25rem;
+    font-weight: 200;
 }
 
 
 
 
+/* === GRID SECTION === */
 
 
+.grid-section {
+
+    /* 
+    margin-right: 160px;
+    margin-left: 160px; */
+}
+
+
+
+/* Grid structure */
+
+
+.grid-container {
+
+   
+    display: grid;
+    grid-gap: 1.875rem;
+    grid-template-columns: 380px 380px 380px;  
+    grid-template-rows: 250px 250px;
+    grid-template-areas: 
+        "supervisor team calc"
+        "supervisor karma calc";
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+
+    align-self: flex-end;
+}
+
+.grid-container > div > h3 {
+
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.grid-container > div > p {
+
+    font-weight: 200;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.grid-card-supervisor {
+
+    grid-area: supervisor;
+    border-top: 5px solid var(--cyan);
+      
+}
+
+
+.grid-card-team {
+    grid-area: team;
+    border-top: 5px solid var(--red);
+
+}
+
+.grid-card-karma {
+    grid-area: karma;
+    border-top: 5px solid var(--orange);  
+}
+
+.grid-card-calculator {
+    grid-area: calc;
+    border-top: 5px solid var(--blue);
+
+}
 
 
 
